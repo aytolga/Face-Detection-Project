@@ -24,7 +24,7 @@ while True:
         engine.say("Welcome, door will open in few seconds")     # Comments for voice assistant.
 
     else:
-        arduino.sendData([0])                  # For rotating servo motor in initial position and turns off the LED when face is not detected.
+        arduino.sendData([0])                  # For rotating servo motor in initial position and turns on the LED when face is not detected.
         print("Please show your face")
         engine.say("Door will close in few seconds please show your face to pass")       # Comments for voice assistant.
 
