@@ -13,10 +13,11 @@ void setup () {
 }
 
 void loop () {
-  data.Get(value);     //Starting to getting values from Python    
+  data.Get(value);     //Starting to getting values from Python 
+     
   servo.write(value[0]);  //Servo motor commands  
-  delay(0);
+  
   digitalWrite(light,value[0]); //LED commands
-  delay(0);
+  
   
 }
